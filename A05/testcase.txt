@@ -1,0 +1,4 @@
+1.udpchecksum.py  10.211.55.2  10.211.55.10 32768 8192 ABCD
+output: The UDPchecksum obtained is: 0x579D
+2. udpchecksum.py  192.168.0.31  192.168.0.30  20  10 Hi
+output: The UDPchecksum obtained is: 0x35c5

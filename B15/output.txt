@@ -1,0 +1,32 @@
+$ nslookup cottonboys.com
+Non-authoritative answer:
+Server:  dns.google
+Address:  8.8.8.8
+
+Name:    cottonboys.com
+Address:  159.89.160.210
+
+---------------------------------------------------------------
+
+$ nslookup -query=ns cottonboys.com
+Non-authoritative answer:
+Server:  dns.google
+Address:  8.8.8.8
+
+cottonboys.com  nameserver = ns08.domaincontrol.com
+cottonboys.com  nameserver = ns07.domaincontrol.com
+
+---------------------------------------------------
+
+$ nslookup -query=mx cottonboys.com
+Server:  dns.google
+Address:  8.8.8.8
+
+cottonboys.com
+        primary name server = ns07.domaincontrol.com
+        responsible mail addr = dns.jomax.net
+        serial  = 2018030100
+        refresh = 28800 (8 hours)
+        retry   = 7200 (2 hours)
+        expire  = 604800 (7 days)
+        default TTL = 600 (10 mins)

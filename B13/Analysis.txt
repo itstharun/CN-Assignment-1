@@ -1,0 +1,11 @@
+﻿
+Analysis:
+
+While  using curl  it responds with the status code 302 meaning the requested host is found whereas using browser we obtain the status code 200 meaning request successful.
+It directs to the embedded link www.vtu.ac.in/kn which is like the default page.
+
+The request header when  accessed by the browser sends previous cookies data as well which is not done by the curl command.
+ 
+The response while using browser contains Headers of Content-Encoding and Content-Length and Vary . Usually the Content length is obtained for the embbeded link but it is not obtained during Curl.
+
+Security Concerns: ideally curl has all the necessary tools to spoof a browser .so  it is not possible to distinguish between a curl and browser request. Any header provided by browser can be added or modified by using curl.

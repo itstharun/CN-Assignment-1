@@ -1,0 +1,12 @@
+output= output.txt
+
+capture file =wscapture.pcapng
+
+Working: nslookup commands are used to obtain mx records ip adress and ns records.
+        options are:
+        ns- name servers
+        mx-mail domain
+        TTl is recorded using wireshark
+
+learning: DNS Caching (TTL)
+          commands of nslookup

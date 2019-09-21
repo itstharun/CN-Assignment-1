@@ -1,0 +1,24 @@
+INPUT:
+      format:  udpchecksum.py <Source IP Address> <Destination IP Address> <Source Port> <Destination port> <Data>
+
+      example: udpchecksum.py  192.168.0.31  192.168.0.30  20  10 Hi
+
+OUTPUT: The UDP Checksum obtained is: <udpchecksum>
+        example output for the example given above is:
+        The UDP Checksum obtained is : 0x35C5
+
+WORKING: The program uses formatting function to convert an integer to its hexadecimal value. Addition of hexadecimal values
+         is Obtained by converting respective hexadecimal to integers.
+
+Challenges Faced:  Understanding The UDP protocol .
+                   Understanding Pseudo Headers.
+                   implementation of Checksum (obtaining padded hex values,wrapping carry etc.)
+
+Contribution: Tharun 1ks17cs093: Understanding UDP and implementation of checksum calculations.
+              Prashanth 1ks17cs056 and Rakshith 1ks17cs061: checked resources and helped Understanding psuedo headers.
+
+references: https://youtu.be/0QneSX0wYcw
+            www.python.org
+
+Note/Apology: The implementation of checksum was completely based on test cases. we tried verifying the checksum through tcpdump 
+          and wireshark . The resultant checksum was always same for data transmitted and we couldnot rectify the mistake.
