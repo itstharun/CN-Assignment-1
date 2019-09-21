@@ -1,1 +1,6 @@
-# CN-Assignment-1
+ CN-Assignment-1
+ Team 14
+ 
+ Team details: THARUN K -1KS17CS093
+ PRASHANTH K -1KS17CS056
+ RAKSHITH R -1KS17CS061
